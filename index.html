@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentary Studio</title>
+<meta name="description" content="Documentary Studio is a personal desktop application that assembles long-form documentary videos and uploads them to its owner's own YouTube channel.">
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#5c5c5c;--rule:#e3e3e3;--accent:#1a5fb4;--card:#f7f7f7}
+@media (prefers-color-scheme:dark){:root{--bg:#15171a;--fg:#e6e6e6;--muted:#a0a4ab;--rule:#2c3036;--accent:#7aa8e8;--card:#1c1f24}}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+h1{font-size:1.75rem;line-height:1.25;margin:0 0 .25rem}
+h2{font-size:1.1rem;margin:2.5rem 0 .6rem;padding-bottom:.35rem;border-bottom:1px solid var(--rule)}
+p,ul{margin:0 0 1rem}ul{padding-left:1.25rem}li{margin-bottom:.4rem}
+a{color:var(--accent)}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em;background:var(--card);padding:.1em .35em;border-radius:3px}
+.sub{color:var(--muted);margin:0 0 2rem}
+.note{background:var(--card);border-left:3px solid var(--accent);padding:.9rem 1rem;border-radius:0 4px 4px 0;margin:0 0 1rem}
+footer{margin-top:3.5rem;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+footer a{margin-right:1rem}
+</style>
+</head>
+<body>
+
+<h1>Documentary Studio</h1>
+<p class="sub">A personal desktop application for producing long-form documentary videos.</p>
+
+<p>Documentary Studio is a single-user Windows application, run locally by its author, that
+assembles long-form documentary videos and publishes them to the author's own YouTube
+channel. It is not a hosted service, it is not distributed to other people, and it has no
+users other than its author.</p>
+
+<h2>What it does</h2>
+<p>The application runs a production pipeline end to end on one machine. Each stage hands
+its output to the next:</p>
+<ul>
+  <li>drafting a narration script from a written outline;</li>
+  <li>generating the voice-over from that script;</li>
+  <li>generating and upscaling the still images that illustrate each chapter;</li>
+  <li>rendering the finished video from the audio and the images;</li>
+  <li>generating a thumbnail;</li>
+  <li>uploading the finished video, with its title, description and tags, to the author's
+      own YouTube channel.</li>
+</ul>
+
+<h2>Use of YouTube API Services</h2>
+<p>The final stage of the pipeline uses <strong>YouTube API Services</strong> to upload
+finished videos. The application uploads only to the channel of the person who signs in,
+and it does not read, collect or process any other person's YouTube data.</p>
+
+<div class="note">
+  By using this application you are also agreeing to be bound by the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Information
+  handled by Google is governed by the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+</div>
+
+<p>You can review and revoke the access this application has to your Google account at any
+time at <a href="https://myaccount.google.com/permissions">Google account permissions</a>.</p>
+
+<h2>Contact</h2>
+<p>Questions about this application can be sent to
+<a href="mailto:cinnamon017@hotmail.com">cinnamon017@hotmail.com</a>.</p>
+
+<footer>
+  <a href="/privacy.html">Privacy Policy</a>
+  <a href="/terms.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>

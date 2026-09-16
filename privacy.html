@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Documentary Studio</title>
+<meta name="description" content="Privacy policy for Documentary Studio, a single-user desktop application that uploads videos to its owner's own YouTube channel.">
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#5c5c5c;--rule:#e3e3e3;--accent:#1a5fb4;--card:#f7f7f7}
+@media (prefers-color-scheme:dark){:root{--bg:#15171a;--fg:#e6e6e6;--muted:#a0a4ab;--rule:#2c3036;--accent:#7aa8e8;--card:#1c1f24}}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+h1{font-size:1.75rem;line-height:1.25;margin:0 0 .25rem}
+h2{font-size:1.1rem;margin:2.5rem 0 .6rem;padding-bottom:.35rem;border-bottom:1px solid var(--rule)}
+p,ul{margin:0 0 1rem}ul{padding-left:1.25rem}li{margin-bottom:.4rem}
+a{color:var(--accent)}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em;background:var(--card);padding:.1em .35em;border-radius:3px}
+.sub{color:var(--muted);margin:0 0 2rem}
+.note{background:var(--card);border-left:3px solid var(--accent);padding:.9rem 1rem;border-radius:0 4px 4px 0;margin:0 0 1rem}
+footer{margin-top:3.5rem;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+footer a{margin-right:1rem}
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Documentary Studio — last updated 16 September 2026</p>
+
+<p>Documentary Studio ("the application") is a desktop application that runs on its author's
+own Windows computer. It has a single user: its author. It is not offered as a service, it
+is not distributed, and it has no accounts, no sign-ups and no server of its own.</p>
+
+<p>This policy explains what the application does with information from your Google account
+when you sign in to it.</p>
+
+<h2>Information the application accesses</h2>
+<p>When you sign in with Google, the application requests one permission:</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.upload</code> — permission to upload
+      videos to your YouTube channel and to set their thumbnails.</li>
+</ul>
+<p>This permission is used for exactly one purpose: uploading a video file that you produced
+with the application to your own YouTube channel, together with the title, description, tags
+and thumbnail you chose. Nothing else is done with it.</p>
+
+<p>The application does <strong>not</strong> request access to your email, your contacts,
+your files, your profile details, your viewing history, your subscribers, or any other
+Google service.</p>
+
+<h2>Information the application stores</h2>
+<p>After you sign in, Google issues an authorization token. The application stores that token
+in a single folder on your own computer:</p>
+<ul>
+  <li><code>%LOCALAPPDATA%\DocumentaryStudio\</code></li>
+</ul>
+<p>The token stays on that computer. It exists so that you do not have to sign in again
+before every upload. It is never uploaded, synchronised, backed up to a remote service, or
+transmitted anywhere except to Google's own servers when the application refreshes it.</p>
+
+<h2>What the application does not do</h2>
+<ul>
+  <li>It has no server, no database and no hosted component. There is nowhere for your data
+      to be sent.</li>
+  <li>It does not sell, rent, trade or share your information with anybody.</li>
+  <li>It does not use analytics, advertising, tracking pixels or cookies. This website does
+      not either — it is static HTML with no scripts and no third-party resources.</li>
+  <li>It does not access, collect or process the YouTube data of any person other than the
+      person signed in.</li>
+  <li>It does not use your Google data to train any machine-learning or artificial
+      intelligence model.</li>
+</ul>
+
+<h2>Limited use of Google user data</h2>
+<div class="note">
+  Documentary Studio's use and transfer of information received from Google APIs to any
+  other app will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+  Services User Data Policy</a>, including the Limited Use requirements.
+</div>
+
+<h2>YouTube API Services</h2>
+<p>The application uses <strong>YouTube API Services</strong> to upload videos. By using it,
+you are also agreeing to be bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Information collected
+and handled by Google is governed by the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>Revoking access and deleting your data</h2>
+<p>You are in control of this at all times, and you do not need to ask anyone:</p>
+<ul>
+  <li><strong>To revoke the application's access</strong>, visit
+      <a href="https://myaccount.google.com/permissions">Google account permissions</a>,
+      select Documentary Studio, and choose "Remove access". The stored token stops working
+      immediately.</li>
+  <li><strong>To delete the stored token</strong>, delete the folder
+      <code>%LOCALAPPDATA%\DocumentaryStudio\</code>. That removes every piece of Google
+      data the application holds — there is no copy anywhere else.</li>
+</ul>
+
+<h2>Children</h2>
+<p>The application is a personal production tool and is not directed at children. It has no
+users other than its author.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the revised version will be posted on this page with a new date at
+the top.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy can be sent to
+<a href="mailto:cinnamon017@hotmail.com">cinnamon017@hotmail.com</a>.</p>
+
+<footer>
+  <a href="/">Home</a>
+  <a href="/terms.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>
