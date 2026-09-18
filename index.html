@@ -19,9 +19,18 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em;b
 .note{background:var(--card);border-left:3px solid var(--accent);padding:.9rem 1rem;border-radius:0 4px 4px 0;margin:0 0 1rem}
 footer{margin-top:3.5rem;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
 footer a{margin-right:1rem}
+nav{display:flex;flex-wrap:wrap;gap:1.4rem;margin:0 0 2.2rem;padding-bottom:.7rem;border-bottom:1px solid var(--rule);font-size:.95rem}
+nav a{text-decoration:none}
+nav a[aria-current]{color:var(--muted);font-weight:600}
 </style>
 </head>
 <body>
+
+<nav>
+  <a href="/" aria-current="page">Home</a>
+  <a href="/privacy.html">Privacy Policy</a>
+  <a href="/terms.html">Terms of Service</a>
+</nav>
 
 <h1>Documentary Studio</h1>
 <p class="sub">A personal desktop application for producing long-form documentary videos.</p>
@@ -48,6 +57,9 @@ its output to the next:</p>
 <p>The final stage of the pipeline uses <strong>YouTube API Services</strong> to upload
 finished videos. The application uploads only to the channel of the person who signs in,
 and it does not read, collect or process any other person's YouTube data.</p>
+
+<p>Videos produced with this application are published to a single channel:
+<a href="https://www.youtube.com/@ASleepChannel">The Soft Constant</a>.</p>
 
 <div class="note">
   By using this application you are also agreeing to be bound by the
