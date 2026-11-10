@@ -50,13 +50,18 @@ its output to the next:</p>
   <li>rendering the finished video from the audio and the images;</li>
   <li>generating a thumbnail;</li>
   <li>uploading the finished video, with its title, description and tags, to the author's
-      own YouTube channel.</li>
+      own YouTube channel;</li>
+  <li>posting a comment the author wrote under that video, and adding it to one of the
+      channel's playlists;</li>
+  <li>reading the channel's own YouTube Analytics reports, to judge how long future videos
+      should be.</li>
 </ul>
 
 <h2>Use of YouTube API Services</h2>
-<p>The final stage of the pipeline uses <strong>YouTube API Services</strong> to upload
-finished videos. The application uploads only to the channel of the person who signs in,
-and it does not read, collect or process any other person's YouTube data.</p>
+<p>The last stages of the pipeline use <strong>YouTube API Services</strong> to upload
+finished videos, post the author's comment under them, add them to a playlist, and read the
+channel's Analytics reports. The application acts only on the channel of the person who
+signs in, and it does not read, collect or process any other person's YouTube data.</p>
 
 <p>Videos produced with this application are published to a single channel:
 <a href="https://www.youtube.com/@ASleepChannel">The Soft Constant</a>.</p>

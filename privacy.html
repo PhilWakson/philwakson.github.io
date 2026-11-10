@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Documentary Studio</title>
-<meta name="description" content="Privacy policy for Documentary Studio, a single-user desktop application that uploads videos to its owner's own YouTube channel.">
+<meta name="description" content="Privacy policy for Documentary Studio, a single-user desktop application that publishes videos to its owner's own YouTube channel.">
 <style>
 :root{--bg:#fff;--fg:#1a1a1a;--muted:#5c5c5c;--rule:#e3e3e3;--accent:#1a5fb4;--card:#f7f7f7}
 @media (prefers-color-scheme:dark){:root{--bg:#15171a;--fg:#e6e6e6;--muted:#a0a4ab;--rule:#2c3036;--accent:#7aa8e8;--card:#1c1f24}}
@@ -33,7 +33,7 @@ nav a[aria-current]{color:var(--muted);font-weight:600}
 </nav>
 
 <h1>Privacy Policy</h1>
-<p class="sub">Documentary Studio — last updated 16 September 2026</p>
+<p class="sub">Documentary Studio — last updated 10 November 2026</p>
 
 <p>Documentary Studio ("the application") is a desktop application that runs on its author's
 own Windows computer. It has a single user: its author. It is not offered as a service, it
@@ -43,18 +43,35 @@ is not distributed, and it has no accounts, no sign-ups and no server of its own
 when you sign in to it.</p>
 
 <h2>Information the application accesses</h2>
-<p>When you sign in with Google, the application requests one permission:</p>
+<p>When you sign in with Google, the application requests these permissions:</p>
 <ul>
-  <li><code>https://www.googleapis.com/auth/youtube.upload</code> — permission to upload
-      videos to your YouTube channel and to set their thumbnails.</li>
+  <li><code>https://www.googleapis.com/auth/youtube.upload</code> — to upload videos to
+      your YouTube channel and to set their thumbnails.</li>
+  <li><code>https://www.googleapis.com/auth/youtube.force-ssl</code> — to post a comment
+      under a video you uploaded, and to add that video to one of your own playlists.</li>
+  <li><code>https://www.googleapis.com/auth/yt-analytics.readonly</code> — to read the
+      YouTube Analytics reports of your own channel.</li>
 </ul>
-<p>This permission is used for exactly one purpose: uploading a video file that you produced
-with the application to your own YouTube channel, together with the title, description, tags
-and thumbnail you chose. Nothing else is done with it.</p>
+<p>Each permission serves one purpose, and only for the channel of the person who signs
+in:</p>
+<ul>
+  <li><strong>Uploading.</strong> A video file you produced with the application is uploaded
+      to your channel, with the title, description, tags, thumbnail and publication date you
+      chose.</li>
+  <li><strong>Commenting.</strong> A comment whose text you wrote yourself is posted under
+      that video. The application shows you the comment before the upload, and posts it only
+      when you start that upload. It never comments on anyone else's video, and never likes,
+      replies, moderates or deletes anything.</li>
+  <li><strong>Playlists.</strong> The uploaded video is added to a playlist of your own
+      channel that you chose.</li>
+  <li><strong>Analytics.</strong> Reports on your own videos — such as audience retention and
+      average view duration — are read so that you can judge how long future videos should
+      be. They are shown only to you.</li>
+</ul>
 
 <p>The application does <strong>not</strong> request access to your email, your contacts,
-your files, your profile details, your viewing history, your subscribers, or any other
-Google service.</p>
+your files, your profile details, your viewing history, your subscribers' identities, or any
+other Google service.</p>
 
 <h2>Information the application stores</h2>
 <p>After you sign in, Google issues an authorization token. The application stores that token
@@ -66,6 +83,14 @@ in a single folder on your own computer:</p>
 before every upload. It is never uploaded, synchronised, backed up to a remote service, or
 transmitted anywhere except to Google's own servers when the application refreshes it.</p>
 
+<p>YouTube Analytics reports the application reads are saved on the same computer, in the
+application's own folders, and nowhere else. They are kept only while the application is
+still authorised: the application checks that authorisation at least every 30 days, and
+deletes the reports when it is no longer granted.</p>
+
+<p>The application does not keep a copy of the comments it posts or of your playlists; those
+live on YouTube.</p>
+
 <h2>What the application does not do</h2>
 <ul>
   <li>It has no server, no database and no hosted component. There is nowhere for your data
@@ -74,7 +99,9 @@ transmitted anywhere except to Google's own servers when the application refresh
   <li>It does not use analytics, advertising, tracking pixels or cookies. This website does
       not either — it is static HTML with no scripts and no third-party resources.</li>
   <li>It does not access, collect or process the YouTube data of any person other than the
-      person signed in.</li>
+      person signed in. It does not read other people's comments or channels.</li>
+  <li>It does not combine your Analytics data with anyone else's, or derive new metrics from
+      it presented as YouTube's own.</li>
   <li>It does not use your Google data to train any machine-learning or artificial
       intelligence model.</li>
 </ul>
@@ -88,8 +115,9 @@ transmitted anywhere except to Google's own servers when the application refresh
 </div>
 
 <h2>YouTube API Services</h2>
-<p>The application uses <strong>YouTube API Services</strong> to upload videos. By using it,
-you are also agreeing to be bound by the
+<p>The application uses <strong>YouTube API Services</strong> to upload videos, post a
+comment under them, add them to a playlist, and read your channel's Analytics reports. By using
+it, you are also agreeing to be bound by the
 <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Information collected
 and handled by Google is governed by the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
@@ -98,12 +126,16 @@ and handled by Google is governed by the
 <p>You are in control of this at all times, and you do not need to ask anyone:</p>
 <ul>
   <li><strong>To revoke the application's access</strong>, visit
-      <a href="https://myaccount.google.com/permissions">Google account permissions</a>,
-      select Documentary Studio, and choose "Remove access". The stored token stops working
-      immediately.</li>
-  <li><strong>To delete the stored token</strong>, delete the folder
-      <code>%LOCALAPPDATA%\DocumentaryStudio\</code>. That removes every piece of Google
-      data the application holds — there is no copy anywhere else.</li>
+      <a href="https://security.google.com/settings/security/permissions">Google security
+      settings</a>, select Documentary Studio, and choose "Remove access". The stored token
+      stops working immediately, and the Analytics reports the application saved are deleted
+      within 30 days.</li>
+  <li><strong>To delete what the application stores</strong>, delete the folder
+      <code>%LOCALAPPDATA%\DocumentaryStudio\</code> and the saved Analytics reports. A
+      deletion you ask for is carried out within 7 days. There is no copy anywhere
+      else.</li>
+  <li>Comments and playlist entries the application created on your channel are yours, and
+      can be edited or deleted in YouTube Studio like any other.</li>
 </ul>
 
 <h2>Children</h2>
